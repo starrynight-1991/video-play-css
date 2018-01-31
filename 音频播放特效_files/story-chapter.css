@@ -1,0 +1,306 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+}
+
+body, h1, h2, h3, h4, h5, h6, input, li, ol, p, ul {
+    margin: 0;
+    padding: 0
+}
+
+ol, ul {
+    list-style: none
+}
+
+body {
+    font: 12px Helvetica, sans-serif;
+    font-family: Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial, san-serif;
+    color: #333;
+    line-height: 1;
+    background-color: #f0f0f0;
+    word-break: break-all;
+    overflow-y: scroll
+}
+
+.page {
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.page, .paper, .showy {
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto
+}
+
+.cl:after, .cl:before, .mod:after, .mod:before, .tag-t2:after, .tag-t2:before {
+    content: "";
+    display: table;
+    height: 0;
+    clear: both
+}
+
+.mod {
+    background-color: #fff
+}
+
+.album-top {
+    color: #999
+}
+
+.pic {
+    display: block;
+    position: relative
+}
+
+.shadow:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    border-radius: inherit;
+    z-index: 1
+}
+
+img {
+    font-size: 10px;
+    border: none;
+    vertical-align: middle
+}
+
+.pic > img {
+    width: 100%;
+    display: block
+}
+
+.info {
+    width: 100%;
+}
+
+.info.mgl-140 {
+    padding: 8px 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400
+}
+
+.elli-multi, .elli-s {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.elli-multi {
+    -webkit-line-clamp: 2
+}
+
+.album-top .album-tit, .buyintro-top > .title {
+    line-height: 1.3;
+    max-height: 2.6em
+}
+
+.buyintro-top > .title, .elli-multi {
+    max-height: 3em
+}
+
+.album-top .album-tit {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333
+}
+
+.elli {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.album-top .info > p.elli {
+    margin: 3px 0;
+    padding-left: 3em
+}
+
+.album-top .info > p.elli > span {
+    position: absolute;
+    margin-left: -3em
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    color: inherit
+}
+
+.c-link {
+    color: #3586bc
+}
+
+.sound-list {
+    border-top: 1px solid #eee;
+}
+
+.sound-list > .mod:after {
+    display: none
+}
+
+.item-block {
+    display: table;
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px
+}
+
+.item-t1, .list-t1 .item-block {
+    padding-bottom: 10px
+}
+
+.col {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.comment:before, .item-t1 > .info:after, .list-t1 .item-block > .info:after, .tab-tit:after, hr {
+    height: 1px;
+    border: none;
+    background-color: #e8e8e8;
+    -webkit-transform: scale(1, .5);
+    -ms-transform: scale(1, .5);
+    transform: scale(1, .5)
+}
+
+.item-t1 > .info:after, .list-t1 .item-block > .info:after {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    content: ''
+}
+
+.btn, .btn1, .ic, .none-select {
+    -webkit-user-select: none;
+    -moz-user-select: none
+}
+
+.btn, .btn1, .ic {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap
+}
+
+.fl {
+    float: left
+}
+
+.ic-playing {
+    width: 15px;
+    height: 15px;
+    background: url("story/playing.gif");
+    background-size: 15px;
+    margin-top: 3px;
+    margin-right: 5px
+}
+
+.ic-pausing {
+    width: 15px;
+    height: 15px;
+    background: url("story/pausing.png");
+    background-size: 15px;
+    margin: 4px 4px 0 1px
+}
+
+.elli-s {
+    -webkit-line-clamp: 1;
+    height: 1.4em
+}
+
+.item-tit {
+    max-height: 2.7em;
+    font-size: 15px;
+    line-height: 1.3
+}
+
+.sound-list .item-tit {
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px
+}
+
+.col-r {
+    padding: 0 18px;
+    color: #ddd
+}
+
+.iconfont {
+    display: inline-block;
+    width: 1em;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.sound-list .iconfont {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-play2 {
+    background: url("story/play.png") no-repeat center;
+    background-size: 24px;
+}
+
+.is-playing .icon-play2 {
+    background: url("story/pause.png") no-repeat center;
+    background-size: 24px;
+}
+
+.load-more {
+    display: block;
+    height: 3em;
+    line-height: 3em;
+    margin: 10px auto;
+    text-align: center;
+    background: no-repeat center;
+    background-size: 1.2em
+}
+
+.c01 {
+    color: #999
+}
+
+.text-more {
+    display: block;
+    text-align: center;
+    padding: 5px 0 15px;
+    font-size: 12px
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+.icon-loading {
+    width: 20px;
+    height: 20px;
+    background: url("story/loading.gif");
+    background-size: 20px;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none !important
+}
